@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+
+    <!-- Basic SEO Meta Tags -->
+    <title>React App</title>
+    <meta name="description" content="A React-based web application created with Create React App.">
+    <meta name="keywords" content="React, JavaScript, Create React App, Frontend Development">
+    <meta name="author" content="Your Name or Company">
+
+    <!-- Social Media Sharing Metadata (Open Graph) -->
+    <meta property="og:title" content="React App">
+    <meta property="og:description" content="A React-based web application">
+    <meta property="og:image" content="%PUBLIC_URL%/social-image.png">
+    <meta property="og:url" content="https://www.yourapp.com">
+
+    <!-- Twitter Card Metadata -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="React App">
+    <meta name="twitter:description" content="A React-based web application">
+    <meta name="twitter:image" content="%PUBLIC_URL%/twitter-image.png">
+
+    <!-- Web Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- External CSS Libraries (Optional, e.g., Bootstrap) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+    
+    <!-- External JavaScript Libraries (Optional, e.g., jQuery, Bootstrap) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    
+    <!-- App Initialization -->
+    <script>
+      // Display a loading message while the app initializes
+      document.getElementById('root').innerHTML = '<p>Loading your React App...</p>';
+    </script>
+
+    <!-- Main JavaScript Bundle (injected automatically during build) -->
+    <!-- 
+      The bundled JavaScript and CSS files for your React application 
+      will be injected here during the build process. If any custom scripts 
+      are added, ensure they do not interfere with React.
+    -->
+
+    <!-- Additional Custom Scripts -->
+    <script>
+      // Example: Any custom JavaScript you want to run before the React app loads
+      console.log('Custom script loaded successfully');
+    </script>
+
+    <!-- Analytics (Optional) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR-GA-ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'YOUR-GA-ID');  // Replace 'YOUR-GA-ID' with your Google Analytics ID
+    </script>
+
+  </body>
+</html>
